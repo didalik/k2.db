@@ -1,4 +1,4 @@
-// db/public/requestor/tm.js -- the Requester's half of Dream Big's TM gate
+// db/public/requestor/tm.js -- the Requester's half of Dream Big's TM gate {{{1
 // (see db/jobs/agent/tm.js in the root k2 repo for the Agent's half and the
 // full mechanism). Establishes trust to the Agent's issued asset and places
 // a matching buy offer -- Stellar's DEX auto-matches standing orders
@@ -46,8 +46,8 @@ async function buy (kp, asset) { // {{{1
   return server.submitTransaction(tx);
 }
 
-/** Places a standing buy offer for the Agent's gate asset and resolves once
- * it's filled. {{{1 */
+/** Places a standing buy offer for the Agent's gate asset and resolves once {{{1
+ * it's filled. */
 export async function buyGrant (onLog = () => {}) {
   const issuerPk = process.env.DB_TM_ISSUER_PK
   if (!issuerPk) throw new Error('DB_TM_ISSUER_PK must be set (the Agents own Stellar public key)');
