@@ -1,5 +1,5 @@
 // db/public/requestor.mjs -- the Requestor's status page, polling the local
-// Node server (db/jobs/requestor/server.js) that serves this page in the
+// Node server (db/public/requestor/server.js) that serves this page in the
 // first place. Not served through db/src/pages.js like the other db/public
 // pages (there's no Cloudflare Worker in this path at all -- this runs
 // entirely in Termux) -- reuses the same put/reset helper and styling for

@@ -1,0 +1,11 @@
+{
+  "name": "db-requestor",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^16.2.0",
+    "esbuild": "latest",
+    "ws": "^8.21.0"
+  }
+}
