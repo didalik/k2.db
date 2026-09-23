@@ -102,7 +102,8 @@ async function doRequestAccess ({ // {{{1
   statusPort = Number(process.env.DB_STATUS_PORT ?? 8443),
   forwardRemotePort = process.env.DB_FORWARD_REMOTE_PORT
     ? Number(process.env.DB_FORWARD_REMOTE_PORT) : undefined,
-  forwardLocalPort,
+  forwardLocalPort = process.env.DB_FORWARD_LOCAL_PORT
+    ? Number(process.env.DB_FORWARD_LOCAL_PORT) : undefined,
 } = {}) {
   remotePort ??= localPort
   forwardLocalPort ??= forwardRemotePort
