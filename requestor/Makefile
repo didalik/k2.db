@@ -4,7 +4,7 @@
 # plus `npm i` here is everything it needs.
 ####
 
-PK ?=                          # the Agent's Stellar public key, published ahead of time
+PK ?= GASLAH2RWXX5SJGWCPRDKC67EWMEC4OY4ACXG4RS7O4TGXS2V3XVFJ3K
 DB_LOCAL_PORT ?= 8099
 DB_REMOTE_PORT ?= 8099
 DB_STATUS_PORT ?= 8443
