@@ -7,5 +7,8 @@
     "@stellar/stellar-sdk": "^16.2.0",
     "esbuild": "latest",
     "ws": "^8.21.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
