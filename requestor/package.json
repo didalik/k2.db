@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "test": "node --experimental-test-module-mocks --test tools/*.test.mjs"
+  },
   "dependencies": {
     "@stellar/stellar-sdk": "^16.2.0",
     "esbuild": "latest",
